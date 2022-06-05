@@ -1,0 +1,65 @@
+1)mkvirtual env
+2) activate
+3) install django
+4)django-admin startprohject prjname
+5) startapp
+6)think about the design requirements ---> we will be making two apps : courses and users .
+courses app --> division , subject , lesson ,  comments 
+users --> custom user model ( trader , emoloyee, senior trader )
+
+Then there are user specific permissions inside the application -- adding ,deleting,updating 
+
+7) include urls for each of the application users
+8) make views...which return an httpresponse
+
+User_info Model :
+   this uses User model and maps oneToOneField...then bio , profile pic , user type choice field to select one type..then string display of the object
+
+Now create a media folder...make setting for this so that django stores pictures in the meida folder...generally media files must be kept on a separate server...for durabilit
+for image we need pillow package 
+
+Register the model in the admin interface
+
+trader can be registered only by the admin 
+However employee and senior trader need to create account 
+
+We would in fact create forms using django model forms that can be used to create new forms ...using inbuilt models or new models ...
+
+Now we will create the views...each for different pages...register, login , etc....we will be using authenticate . login, logout 
+
+in the registration view..check for the post method..then use the forms pass them to the template and return render the template 
+
+authenticate uses password username  
+user.is_active
+responseRedirect 
+
+login(request, user) is used to log in the user 
+
+logout view to logout the user from the application ...we can usee the login_required decorator 
+
+use of csrf token is used when we are submitting form in post mehtod 
+
+same origin policy 
+cors - cross origin resource sharing 
+csrf -- cross site resoruce forgery 
+preflight request
+
+in template u can do conditional rendering of template 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

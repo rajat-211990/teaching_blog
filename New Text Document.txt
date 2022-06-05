@@ -1,0 +1,48 @@
+An application for retail traders to train employees. 
+there will be four type of users in the application :
+
+1) Admin
+2) traders(treachers)
+3) employees(students)
+4) senior traders(parents)
+
+Traders will be sharing content to train the employees using customized short duration courses.
+
+Senior traders can comment on the course interaction.
+
+home page shows the best trader in terms of performance.
+
+We have login/registration facility.
+
+Upcoming event can also be placed on the home page .
+
+registration page has a form that the users have to fill 
+
+Security system used is default password username provided by django
+
+other features :
+
+Choose profile picture
+
+Employee can choose from any of the traders on the basis of course provided by the trader.
+
+Trader can infact add multiple courses.
+
+employees can download presentations notes and videos after logging into the application 
+
+breadcrumb position of user inside the application
+
+senior traders can comment on each of the interaction
+
+traders can update the lesson or delete the lesson 
+
+The front end is responsive as well 
+
+Hamburger menu, hidden nav section 
+Employees can watch videos as well 
+
+
+
+
+
+
